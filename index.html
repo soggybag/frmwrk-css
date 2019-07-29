@@ -8,36 +8,47 @@
 <body>
 	
 	<div class="navbar">
-				<ul>
-					<li><h1 class="title">FRMWRK</h1></li>
-					<li><a href="#colors">Colors</a></li>
-					<li><a href="#navbar">Navbar</a></li>
-					<li><a href="#headings">Headings</a></li>
-					<li><a href="#type">Type</a></li>
-					<li><a href="#forms">forms</a></li>
-				</ul>
-		
-				<ul>
-					<li><a href="">GitHub</a></li>
-				</ul>
-			</div>
+		<ul>
+			<li><h1 class="title">FRMWRK</h1></li>
+			<li><a href="#colors">Colors</a></li>
+			<li><a href="#navbar">Navbar</a></li>
+			<li><a href="#headings">Headings</a></li>
+			<li><a href="#type">Type</a></li>
+			<li><a href="#forms">forms</a>
+			<li><a href="#footer">Footer</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
+		</ul>
+	</div>
 
   <div class="container">
 		<section id="colors">
 			<h1>Colors</h1>
 			<div class="color-grid">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
+				<div style="background-color: var(--color-background)">--color-background</div>
+				
+				<div style="background-color: var(--color-foreground); color: var(--color-background)">--color-foreground</div>
+				
+				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-dark</div>
+				
+				<div style="background-color: var(--color-light)">--color-light</div>
+				
+				<div style="background-color: var(--color-md-light)">--color-md-light</div>
+				
+				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-md-dark</div>
+				
+				<div style="background-color: var(--color-primary); color: var(--color-background)">--color-primary</div>
+				
+				<div style="background-color: var(--color-info); color: var(--color-background)">--color-info</div>
+				
+				<div style="background-color: var(--color-success); color: var(--color-background)">--color-success</div>
+				
+				<div style="background-color: var(--color-danger); color: var(--color-background)">--color-danger</div>
+				
+				<div style="background-color: var(--color-callout)">--color-callout</div>
+				<div style="background-color: var(--color-lightest)">--color-lightest</div>
 			</div>
 		</section>
 		
@@ -119,16 +130,18 @@
 		<section id="forms">
 			<h2>Buttons</h2>
 			<p>This is your average button. You might want to click it.</p>
-			<button>Submit</button>
+			
+			<p><button>Submit</button></p>
 
 			<p>This button has consequences. You might want to think twice before clicking.</p>
-			<button 
+			<p>
+				<button 
 				style="--weight: bold; --background-color: #f85353;"
 			>Delete</button>
-
-			<button 
+				<button 
 				style="--background-color: #6bc253;"
 			>Go!</button>
+			</p>
 		</section>
 		
 		<section>
@@ -176,7 +189,53 @@
 				</label>
 			</form>
 		</section>
-
+		
+		<section id="footers">
+			<h2>Page Footer</h2>
+			<div class="page-footer">
+				<ul>
+					<li><h3>Column 1</h3></li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+				
+				<ul>
+					<li><h3>Column 2</h3></li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+				
+				<ul>
+					<li><h3>Column 3</h3></li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+			</div>
+		</section>
   </div>
+	<div class="page-footer">
+		<ul>
+			<li><h3>Content</h3></li>
+			<li><a href="#colors">Colors</a></li>
+			<li><a href="#navbar">Navbar</a></li>
+			<li><a href="#headings">Headings</a></li>
+			<li><a href="#type">Type</a></li>
+			<li><a href="#forms">forms</a></li>
+		</ul>
+		
+		<ul>
+			<li><h3>Resources</h3></li>
+			<li><a href="">CSS Tricks</a></li>
+			<li><a href="">CSS Tricks</a></li>
+		</ul>
+		
+		<ul>
+			<li><h3>Contact</h3></li>
+			<li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
+		</ul>
+	</div>
 </body>
 </html>

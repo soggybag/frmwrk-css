@@ -1,11 +1,14 @@
 :root {
 	/* Colors */
-	--color-background: #efefef;
+	--color-background: #eee;
 	--color-foreground: #444;
-	--color-dark: #121212;
-	--color-light: #fff;
+	
+	--color-lightest: #fff;
+	--color-light: #efefef;
 	--color-md-light: #aaa;
 	--color-md-dark: #666;
+	--color-dark: #212121;
+	
 	--color-primary: #007bff;
 	--color-info: #17a2b8;
 	--color-success: #28a745;
