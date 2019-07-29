@@ -359,7 +359,7 @@ position left to 40px. */
 	background-color: var(--color-foreground);
 	color: var(--color-background);
 	display: flex;
-	justify-content: space-between
+	justify-content: center
 }
 
 .page-footer h1, 
