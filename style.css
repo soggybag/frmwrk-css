@@ -4,6 +4,7 @@
 }
 
 section {
+	box-sizing: border-box;
 	border: 2px solid #aaa;
 	padding: 1em;
 	margin-bottom: 1em;
@@ -23,4 +24,18 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
+}
+
+
+.swatch-container {
+	display:grid;
+	grid-template-columns:repeat(9, 1fr);
+	grid-template-rows: 4em;
+	grid-gap:1em;
+}
+
+.swatch {
+	border: 1px solid;
+	height: 3em;
+	
 }

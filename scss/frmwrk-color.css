@@ -107,15 +107,4 @@
   --color-md-dark: var(--color-gray-darker-1);
   --color-lightest: var(--color-gray-lighter-4);
 }
-
-:root {
-  /* Font Styles */
-  --font-size: 18px;
-  --font-line-height: 1.65;
-  /* Font Stacks */
-  --font-stack: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,Cantarell, sans-serif;
-  --font-stack-code: Courier;
-  /* Layout */
-  --vertical-space: 2rem;
-}
-/*# sourceMappingURL=frmwrk-theme.css.map */
+/*# sourceMappingURL=frmwrk-color.css.map */

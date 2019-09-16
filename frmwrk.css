@@ -21,12 +21,12 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(--color-md-dark);
 }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.3em; }
-h5 { font-size: 1.1em; }
-h6 { font-size: 1em; }
+h1 { font-size: 2.5em; line-height: 3rem; }
+h2 { font-size: 2em; line-height: 2rem; }
+h3 { font-size: 1.75em; line-height: 2rem; }
+h4 { font-size: 1.5em; line-height: 2rem; }
+h5 { font-size: 1em; font-weight: 500; }
+h6 { font-size: 1em; font-weight: 400; }
 			
 strong {
 	color: var(--color-md-dark);
@@ -61,12 +61,12 @@ a:link {}
 
 a:visited { 
 	/* vendor prefixes! */
-	filter: brightness(50%);
+	color: var(--color-primary-darker-2);
 }
 
 a:hover {
 	/* vendor prefixes! */
-	filter: brightness(50%);
+	color: var(--color-primary-lighter-2);
 }
 
 /* Form Elements and Controls */
@@ -89,7 +89,6 @@ button {
 	/* Remove the default styles */
 	border: none;
 	font: inherit;
-	color: inherit;
 	box-shadow: none;
 	background-color: transparent;
 
@@ -109,7 +108,7 @@ button {
 	/* Use some variables to control the appearance */
 	font-weight: var(--weight);
 	background-color: var(--background-color, var(--color-primary));
-	color: var(--color-light);
+	color: var(--color-lightest);
 }
 
 /* Style the interactive states of the button */
@@ -122,7 +121,7 @@ button:hover {
 
 button:active {
 	background-color:var(--background-color, var(--color-primary));
-	color: var(--color-light);
+	color: var(--color-lightest);
 	/* Use filter to make the button darker */
 	-webkit-filter: brightness(80%);
 	-moz-filter: brightness(80%); 
@@ -293,6 +292,7 @@ position left to 40px. */
 
 
 /* ************************ */
+
 /* Nav bar styles */
 
 /* Navbar */
@@ -332,11 +332,13 @@ position left to 40px. */
 
 .navbar a:hover {
 	background-color: var(--color-light);
+	color: var(--color-dark);
 	filter: none;
 }
 
 .navbar a:active {
-	background-color: var(--color-dark);
+	background-color: var(--color-info);
+	color: var(--color-lightest);
 	filter: none;
 }
 
