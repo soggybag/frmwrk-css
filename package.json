@@ -6,9 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "build": "add some sass commands here...",
+    "predeploy": "",
+    "deploy": "gh-pages"
   },
   "repository": {
     "type": "git",
