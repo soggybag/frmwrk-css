@@ -6,8 +6,8 @@
 
  Download: 
 
- - `frmwrk.css`
- - `frmwrk-theme.css`
+ - [`frmwrk.css`](https://raw.githubusercontent.com/soggybag/frmwrk-css/master/frmwrk.css)
+ - [`frmwrk-theme.css`](https://raw.githubusercontent.com/soggybag/frmwrk-css/master/frmwrk-theme.css)
 
  Then add the following to the head of your HTML document. 
 
@@ -76,11 +76,16 @@ Child elements in the footer will automatically layout with Flex box centered.
  ## Todo: 
 
  - Add documentation 
-
- ## Basic CSS styles 
-
-
+ - Add alternate themes 
+ - Add some form styles
+  - Grouping options for form elements (see: https://purecss.io/forms/ for ideas)
+    - Inline
+    - Stacked
+    - Grouped 
+ - Better organize scss and css files
+ - Add sass build script
+  - Add minification
 
  ## Web Components 
 
- Now includes web components! 
+Coming soon web components! 
