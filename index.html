@@ -55,6 +55,9 @@
 			<h1>Navbar</h1>
 			
 			<h2>Navbar 1</h2>
+			<p>A navbar with all elements on the left.</p>
+			<p>Use a single child under <code>div.navbar</code>.</p>
+
 			<div class="navbar">
 				<ul>
 					<li><h1 class="title">TITLE</h1></li>
@@ -66,50 +69,99 @@
 			</div>
 
 			<div>
-				<pre>
+				<pre class="code-block">
 					<code>
-&#x3C;div class=&#x22;navbar&#x22;&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x3C;ul&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;li&#x3E;&#x3C;h1 class=&#x22;title&#x22;&#x3E;TITLE&#x3C;/h1&#x3E;&#x3C;/li&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Link 1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Link 2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Link 3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Link 4&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-&#x9;&#x9;&#x9;&#x9;&#x3C;/ul&#x3E;
-&#x9;&#x9;&#x9;&#x3C;/div&#x3E;
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
+
+
+
+			
+			<h2>Navbar 2</h2>
+			<p>A navbar with groups of elements on the left and the right.</p>
+			<p>Use two children under <code>div.navbar</code>.</p>
+			<div class="navbar">
+				<ul>
+					<li><h1 class="title">TITLE</h1></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Mission</a></li>
+				</ul>
+				
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<pre class="code-block">
+					<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
 					</code>
 				</pre>
 			</div>
 			
-			<h2>Navbar 2</h2>
+			<p>here is an alternative with the site title on the left and links on the right.</p>
+
 			<div class="navbar">
 				<ul>
 					<li><h1 class="title">TITLE</h1></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Mission</a></li>
 				</ul>
 				
 				<ul>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Mission</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
+
+			<div>
+					<pre class="code-block">
+						<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+
+
 			
 			<h2>Navbar 3</h2>
-			<div class="navbar">
-				<ul>
-					<li><h1 class="title">TITLE</h1></li>
-				</ul>
-				
-				<ul>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Mission</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-			
-			<h2>Navbar 3</h2>
+			<p>With three children the second child will be centered. 
+				This example places the site title in the center.</p>
 			<div class="navbar">
 				<ul>
 					<li><a href="#">Products</a></li>
@@ -125,6 +177,30 @@
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
+
+			<div>
+					<pre class="code-block">
+						<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+
+
 		</section>
 		
 		<section id="headings">
@@ -135,28 +211,67 @@
 			<h4>H4 Heading</h4>
 			<h5>H5 Heading</h5>
 			<h6>H6 Heading</h6>
+
+			<pre>
+				<code>
+&lt;h1&gt;Headings&lt;/h1&gt;
+&lt;h1&gt;H1 Heading&lt;/h1&gt;
+&lt;h2&gt;H2 Heading&lt;/h2&gt;
+&lt;h3&gt;H3 Heading&lt;/h3&gt;
+&lt;h4&gt;H4 Heading&lt;/h4&gt;
+&lt;h5&gt;H5 Heading&lt;/h5&gt;
+&lt;h6&gt;H6 Heading&lt;/h6&gt;
+				</code>
+			</pre>
 		</section>
 		
 		<section id="type">
 			<h1>Paragraph styles</h1>
 			<p>This is an <strong>average</strong> paragraph. It includes some <em>inline</em> elements such as &lt;strong&gt; and &lt;em&gt;.</p>
+
+			<pre>
+				<code>
+&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
+				</code>
+			</pre>
 		</section>
 		
 		<section id="forms">
 			<h2>Buttons</h2>
+
 			<p>This is your average button. You might want to click it.</p>
 			
 			<p><button>Submit</button></p>
 
+			<pre>
+				<code>
+&lt;button&gt;Submit&lt;/button&gt;
+				</code>
+			</pre>
+
 			<p>This button has consequences. You might want to think twice before clicking.</p>
+			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
 			<p>
-				<button 
-				style="--weight: bold; --background-color: #f85353;"
-			>Delete</button>
-				<button 
-				style="--background-color: #6bc253;"
-			>Go!</button>
+<button 
+	style="--weight: bold; --background-color: #f85353;"
+>Delete</button>
+	<button 
+	style="--background-color: #6bc253;"
+>Go!</button>
 			</p>
+
+			<pre>
+				<code>
+&lt;button 
+	style=&quot;--weight: bold; 
+	--background-color: #f85353;&quot;
+&gt;Delete&lt;/button&gt;
+
+&lt;button 
+	style=&quot;--background-color: #6bc253;&quot;
+&gt;Go!&lt;/button&gt;
+				</code>
+			</pre>
 		</section>
 		
 		<section>

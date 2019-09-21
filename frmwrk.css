@@ -9,12 +9,12 @@ body {
 
 /* Text and Headings */
 
-p, .info, h1, h2, h3, h4, h5, h6, .navbar {
+p, .info, h1, h2, h3, h4, h5, h6, .navbar, pre {
 	margin: 0 0 var(--vertical-space) 0;
 }
 
 p:last-of-type {
-	margin-bottom: 0;
+	
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -403,4 +403,16 @@ position left to 40px. */
 	
 }
 
+
+/* ********* Code ************ */
+
+.code-block {
+	background-color: var(--color-gray-lighter-3);
+	padding: 0 1em 0 1em;
+}
+
+code {
+	color: var(--color-danger-lighter-1);
+	tab-size: 2em;
+}
 
