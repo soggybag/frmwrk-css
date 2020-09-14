@@ -20,6 +20,11 @@
 <head>
  ```
 
+## Get the files from github.io 
+
+https://soggybag.github.io/frmwrk-css/frmwrk.css
+
+
 ## Layout
 
 Frmwrk doesn't provide any layout or grid system. These tasks are best handeled with [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/).
@@ -85,6 +90,8 @@ Child elements in the footer will automatically layout with Flex box centered.
  - Better organize scss and css files
  - Add sass build script
   - Add minification
+  - https://github.com/hellobrian/sass-recipes/tree/master/node-sass
+  - https://stackoverflow.com/questions/40579330/minify-css-with-node-sass
 
  ## Web Components 
 

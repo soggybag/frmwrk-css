@@ -7,7 +7,7 @@
 </head>
 <body class="dark">
 	
-	<div class="navbar">
+	<div class="navbar sticky">
 		<ul>
 			<li><h1 class="title">FRMWRK</h1></li>
 			<li><a href="#colors">Colors</a></li>
@@ -24,6 +24,155 @@
 	</div>
 
   <div class="container">
+
+		<section>
+			<h1>Cards</h1>
+
+			<div style="display:flex; align-items: flex-start; ">
+				<div class="frmwrk-card">
+					<h3>Hello World</h3>
+					<p>And the the card says hello.</p>
+				</div>
+	
+				<div class="frmwrk-card">
+					<h3>Hello World</h3>
+					<p>And the the card says hello.</p>
+					<footer>
+						<p>A note at the bottom.</p>
+					</footer>
+				</div>
+	
+				<div class="frmwrk-card">
+					<img src="images/kitten-0.jpeg" >
+					<h3>Hello World</h3>
+					<p>And the the card says hello.</p>
+					<footer>
+						<p>A note at the bottom.</p>
+					</footer>
+				</div>
+			</div>
+		
+		</section>
+
+		<section id="headings">
+			<h1>Headings</h1>
+			<h1>H1 Heading</h1>
+			<h2>H2 Heading</h2>
+			<h3>H3 Heading</h3>
+			<h4>H4 Heading</h4>
+			<h5>H5 Heading</h5>
+			<h6>H6 Heading</h6>
+
+			<pre>
+				<code>
+&lt;h1&gt;Headings&lt;/h1&gt;
+&lt;h1&gt;H1 Heading&lt;/h1&gt;
+&lt;h2&gt;H2 Heading&lt;/h2&gt;
+&lt;h3&gt;H3 Heading&lt;/h3&gt;
+&lt;h4&gt;H4 Heading&lt;/h4&gt;
+&lt;h5&gt;H5 Heading&lt;/h5&gt;
+&lt;h6&gt;H6 Heading&lt;/h6&gt;
+				</code>
+			</pre>
+		</section>
+		
+		<section id="type">
+			<h1>Paragraph styles</h1>
+			<p>This is an <strong>average</strong> paragraph. It includes some <em>inline</em> elements such as &lt;strong&gt; and &lt;em&gt;.</p>
+
+			<pre>
+				<code>
+&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
+				</code>
+			</pre>
+		</section>
+		
+		<section id="forms">
+			<h2>Buttons</h2>
+
+			<p>This is your average button. You might want to click it.</p>
+			
+			<p><button>Submit</button></p>
+
+			<pre>
+				<code>
+&lt;button&gt;Submit&lt;/button&gt;
+				</code>
+			</pre>
+
+			<p>This button has consequences. You might want to think twice before clicking.</p>
+			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
+			<p>
+<button 
+	style="--weight: bold; --background-color: #f85353;"
+>Delete</button>
+	<button 
+	style="--background-color: #6bc253;"
+>Go!</button>
+			</p>
+
+			<pre>
+				<code>
+&lt;button 
+	style=&quot;--weight: bold; 
+	--background-color: #f85353;&quot;
+&gt;Delete&lt;/button&gt;
+
+&lt;button 
+	style=&quot;--background-color: #6bc253;&quot;
+&gt;Go!&lt;/button&gt;
+				</code>
+			</pre>
+		</section>
+		
+		<section>
+			<h2>Links</h2>
+			<p>This <a href="#">paragraph</a> contains a couple <a href="#">links</a> to show off their styles in context.</p>
+		</section>
+
+		<section>
+			<h2>Forms and controls</h2>
+			<form>
+				<label>
+					<span>Text:</span>
+					<input type="text" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Email:</span>
+					<input type="email" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Password:</span>
+					<input type="password" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Your comments</span>
+					<textarea placeholder="Your comment"></textarea>
+				</label>
+
+				<!-- Switch with Click -->
+				<div>
+					<label id="switch-2" class="switch-2">
+						<input type="checkbox">
+						<div>
+							<div></div>
+						</div>
+					</label>
+					<span>Click Switch no JS</span>
+				</div>
+
+				<label class="control-checkbox">One
+					<input type="checkbox" checked="checked">
+					<span></span>
+				</label>
+			</form>
+		</section>
+
+
+
 		<section id="colors">
 			<h1>Colors</h1>
 			<div class="color-grid">
@@ -203,122 +352,7 @@
 
 		</section>
 		
-		<section id="headings">
-			<h1>Headings</h1>
-			<h1>H1 Heading</h1>
-			<h2>H2 Heading</h2>
-			<h3>H3 Heading</h3>
-			<h4>H4 Heading</h4>
-			<h5>H5 Heading</h5>
-			<h6>H6 Heading</h6>
-
-			<pre>
-				<code>
-&lt;h1&gt;Headings&lt;/h1&gt;
-&lt;h1&gt;H1 Heading&lt;/h1&gt;
-&lt;h2&gt;H2 Heading&lt;/h2&gt;
-&lt;h3&gt;H3 Heading&lt;/h3&gt;
-&lt;h4&gt;H4 Heading&lt;/h4&gt;
-&lt;h5&gt;H5 Heading&lt;/h5&gt;
-&lt;h6&gt;H6 Heading&lt;/h6&gt;
-				</code>
-			</pre>
-		</section>
 		
-		<section id="type">
-			<h1>Paragraph styles</h1>
-			<p>This is an <strong>average</strong> paragraph. It includes some <em>inline</em> elements such as &lt;strong&gt; and &lt;em&gt;.</p>
-
-			<pre>
-				<code>
-&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
-				</code>
-			</pre>
-		</section>
-		
-		<section id="forms">
-			<h2>Buttons</h2>
-
-			<p>This is your average button. You might want to click it.</p>
-			
-			<p><button>Submit</button></p>
-
-			<pre>
-				<code>
-&lt;button&gt;Submit&lt;/button&gt;
-				</code>
-			</pre>
-
-			<p>This button has consequences. You might want to think twice before clicking.</p>
-			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
-			<p>
-<button 
-	style="--weight: bold; --background-color: #f85353;"
->Delete</button>
-	<button 
-	style="--background-color: #6bc253;"
->Go!</button>
-			</p>
-
-			<pre>
-				<code>
-&lt;button 
-	style=&quot;--weight: bold; 
-	--background-color: #f85353;&quot;
-&gt;Delete&lt;/button&gt;
-
-&lt;button 
-	style=&quot;--background-color: #6bc253;&quot;
-&gt;Go!&lt;/button&gt;
-				</code>
-			</pre>
-		</section>
-		
-		<section>
-			<h2>Links</h2>
-			<p>This <a href="#">paragraph</a> contains a couple <a href="#">links</a> to show off their styles in context.</p>
-		</section>
-
-		<section>
-			<h2>Forms and controls</h2>
-			<form>
-				<label>
-					<span>Text:</span>
-					<input type="text" placeholder="What is your name?">
-				</label>
-
-				<label>
-					<span>Email:</span>
-					<input type="email" placeholder="What is your name?">
-				</label>
-
-				<label>
-					<span>Password:</span>
-					<input type="password" placeholder="What is your name?">
-				</label>
-
-				<label>
-					<span>Your comments</span>
-					<textarea placeholder="Your comment"></textarea>
-				</label>
-
-				<!-- Switch with Click -->
-				<div>
-					<label id="switch-2" class="switch-2">
-						<input type="checkbox">
-						<div>
-							<div></div>
-						</div>
-					</label>
-					<span>Click Switch no JS</span>
-				</div>
-
-				<label class="control-checkbox">One
-					<input type="checkbox" checked="checked">
-					<span></span>
-				</label>
-			</form>
-		</section>
 		
 		<section id="footers">
 			<h2>Page Footer</h2>
@@ -357,6 +391,7 @@
 
 				<div>
 					<div style="margin:2em">
+						
 						<frmwrk-slides time="5000">
 							<img src="./images/kitten-0.jpeg" width="259" height="194">
 							<img src="./images/kitten-1.jpeg" width="257" height="196">
@@ -365,6 +400,7 @@
 							<img src="./images/kitten-4.jpeg" width="275" height="183">
 							<img src="./images/kitten-5.jpeg" width="275" height="183">
 						</frmwrk-slides>
+
 					</div>
 					<div style="margin:2em">
 						<frmwrk-slides-2 time="5000" style="width:257px; height:183;">

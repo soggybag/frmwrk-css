@@ -1,227 +1,248 @@
-body {
-	background-color: var(--color-background);
-	color: var(--color-foreground);
-	font-family: var(--font-stack);
-	font-size: var(--font-size);
-	line-height: var(--font-line-height);
-	margin: 0;
-}
-
 /* Text and Headings */
-
 p, .info, h1, h2, h3, h4, h5, h6, .navbar, pre {
-	margin: 0 0 var(--vertical-space) 0;
-}
-
-p:last-of-type {
-	
+  margin: 0 0 var(--vertical-space) 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: var(--color-md-dark);
+  color: var(--color-md-dark);
 }
 
-h1 { font-size: 2.5em; line-height: 3rem; }
-h2 { font-size: 2em; line-height: 2rem; }
-h3 { font-size: 1.75em; line-height: 2rem; }
-h4 { font-size: 1.5em; line-height: 2rem; }
-h5 { font-size: 1em; font-weight: 500; }
-h6 { font-size: 1em; font-weight: 400; }
-			
+h1 {
+  font-size: 2.5em;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
 strong {
-	color: var(--color-md-dark);
+  color: var(--color-md-dark);
 }
 
 em {
-	color: var(--color-dark);
+  color: var(--color-dark);
 }
-			
+
 .info {
-	background-color: var(--color-info);
-	color: var(--color-background);
-	padding: 1em;
-	border-radius: 0.5em;
+  background-color: var(--color-info);
+  color: var(--color-background);
+  padding: 1em;
+  border-radius: 0.5em;
 }
-			
+
 .info p {
-	margin: 0;
+  margin: 0;
 }
-
-
 
 /* Anchor Styles */
-
 a {
-	color: var(--color-primary);
-	text-decoration: none;
-	transition: 200ms;
+  color: var(--color-primary);
+  text-decoration: none;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
-a:link {}
-
-a:visited { 
-	/* vendor prefixes! */
-	color: var(--color-primary-darker-2);
+a:visited {
+  /* vendor prefixes! */
+  color: var(--color-primary-darker-2);
 }
 
 a:hover {
-	/* vendor prefixes! */
-	color: var(--color-primary-lighter-2);
+  /* vendor prefixes! */
+  color: var(--color-primary-lighter-2);
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+/* ********* Code ************ */
+.code-block {
+  background-color: var(--color-gray-lighter-3);
+  padding: 0 1em 0 1em;
+}
+
+code {
+  color: var(--color-danger-lighter-1);
+  -moz-tab-size: 2em;
+    -o-tab-size: 2em;
+       tab-size: 2em;
 }
 
 /* Form Elements and Controls */
-
 label > span {
-	display: block
+  display: block;
 }
-			
+
 input, label {
-	display: block;
+  display: block;
 }
-			
+
 form {
-	display: flex;
-	flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 button {
-	--weight: normal; 
-	/* Remove the default styles */
-	border: none;
-	font: inherit;
-	box-shadow: none;
-	background-color: transparent;
-
-	/* Give the button a finger cursor */
-	cursor: pointer;
-	/* Style the button */
-	border-width: 2px;
-	border-style: solid;
-	border-color: transparent;
-	border-radius: 0.5em;
-	padding: 0.7em 1em; /* Use padding to give the text some space */
-	font-size: 1em;
-
-	/* Think about adding a transition */
-	transition: 200ms;
-
-	/* Use some variables to control the appearance */
-	font-weight: var(--weight);
-	background-color: var(--background-color, var(--color-primary));
-	color: var(--color-lightest);
+  --weight: normal;
+  /* Remove the default styles */
+  border: none;
+  font: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  /* Give the button a finger cursor */
+  cursor: pointer;
+  /* Style the button */
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 0.5em;
+  padding: 0.7em 1em;
+  /* Use padding to give the text some space */
+  font-size: 1em;
+  /* Think about adding a transition */
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  /* Use some variables to control the appearance */
+  font-weight: var(--weight);
+  background-color: var(--background-color, var(--color-primary));
+  color: var(--color-lightest);
 }
 
 /* Style the interactive states of the button */
 button:hover {
-	/* Use the variables here */ 
-	background-color: var(--body-color);
-	border-color: var(--background-color, var(--color-primary));
-	color: var(--background-color, var(--color-primary));
+  /* Use the variables here */
+  background-color: var(--body-color);
+  border-color: var(--background-color, var(--color-primary));
+  color: var(--background-color, var(--color-primary));
 }
 
 button:active {
-	background-color:var(--background-color, var(--color-primary));
-	color: var(--color-lightest);
-	/* Use filter to make the button darker */
-	-webkit-filter: brightness(80%);
-	-moz-filter: brightness(80%); 
-	-ms-filter: brightness(80%);
-	-o-filter: brightness(80%);
-	filter: brightness(80%);
+  background-color: var(--background-color, var(--color-primary));
+  color: var(--color-lightest);
+  /* Use filter to make the button darker */
+  -webkit-filter: brightness(80%);
+  -moz-filter: brightness(80%);
+  -ms-filter: brightness(80%);
+  -o-filter: brightness(80%);
+  filter: brightness(80%);
 }
 
-input[type=text], 
-input[type=email], 
-input[type=password], 
+input[type=text],
+input[type=email],
+input[type=password],
 textarea {
-	--border-color: var(--color-md-dark);
-	padding: 0.7em 1em;
-	border: 2px solid var(--border-color);
-	border-radius: 0.5em;
-	font-size: 1em;
-
-	/* Add a transition */
-	transition: 200ms;
-
-	/* 
+  --border-color: var(--color-md-dark);
+  padding: 0.7em 1em;
+  border: 2px solid var(--border-color);
+  border-radius: 0.5em;
+  font-size: 1em;
+  /* Add a transition */
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  /* 
 		This removes the accessibility outline 
 		which should never be removed
 		https://a11yproject.com/posts/never-remove-css-outlines/
 	*/
-	outline: none !important; 
+  outline: none !important;
 }
 
-  input[type=text]:focus, 
-  input[type=email]:focus, 
-  input[type=password]:focus,
-  textarea:focus {
-    --border-color: var(--color-primary);
-  }
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+textarea:focus {
+  --border-color: var(--color-primary);
+}
 
-  label {
-    display: block;
-    margin: 0 0 1em 0;
-  }
+label {
+  display: block;
+  margin: 0 0 1em 0;
+}
 
-  label > span {
-    font-size: 0.75em;
-    display: block;
-    margin: 1em 0;
-  }
-
-
+label > span {
+  font-size: 0.75em;
+  display: block;
+  margin: 1em 0;
+}
 
 /* Switch Click 
 This switch is toggled on a click. The JavaScript 
 below adds or removes the class .on to change the 
 visual state of the switch. */
-
 .switch-2 {
-	width: 54px;
-	height: 32px;
-	border-radius: 18px;
-	border: 2px solid var(--color-medium);
-	background-color: var(--color-light);
-	position: relative;
-	transition: 200ms;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  width: 54px;
+  height: 32px;
+  border-radius: 18px;
+  border: 2px solid var(--color-medium);
+  background-color: var(--color-light);
+  position: relative;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .switch-2 > input[type=checkbox] {
-	display: none;
+  display: none;
 }
-  
+
 .switch-2 > div {
-	width: 28px;
-	height: 28px;
-	background-color: var(--color-md-light);
-	border-radius: 50%;
-	margin: 2px;
-	position: absolute;
-	left: 0;
-	transition: 200ms
+  width: 28px;
+  height: 28px;
+  background-color: var(--color-md-light);
+  border-radius: 50%;
+  margin: 2px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
+
 /* When the .switch has the class .on change the 
 color to green. */
-
 .switch-2 input:checked ~ div {
-	background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
+
 /* When the .switch has the .on class change the 
 position left to 40px. */
-
 .switch-2 input:checked ~ div {
-	left: 22px;
+  left: 22px;
 }
 
-
 /* ---------------- */
-
-
 /* The container */
 .control-checkbox {
   display: block;
@@ -286,133 +307,192 @@ position left to 40px. */
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-
-/* ************************ */
-
-/* Nav bar styles */
-
-/* Navbar */
-.navbar {
-	background-color: var(--color-foreground);
-	color: var(--color-background);
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	align-items: baseline;
+code {
+  font-family: 'Courier New', Courier, monospace;
 }
 
+/* ************************ */
+/* Nav bar styles */
+/* ************************ */
+/* Navbar */
+.navbar {
+  background-color: var(--color-foreground);
+  color: var(--color-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.navbar.sticky {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  position: relative;
+}
+
+/* Nav ul styles */
 .navbar > ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: baseline;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 /* Navbar links */
 .navbar a {
-	display: block;
-	padding: 0.25em 1em;
-	color: var(--color-info);
-}
-
-.navbar a:link {
-	
-}
-
-.navbar a:visited {
-	
+  display: block;
+  padding: 0.25em 1em;
+  color: var(--color-info);
 }
 
 .navbar a:hover {
-	background-color: var(--color-light);
-	color: var(--color-dark);
-	filter: none;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  -webkit-filter: none;
+          filter: none;
 }
 
 .navbar a:active {
-	background-color: var(--color-info);
-	color: var(--color-lightest);
-	filter: none;
+  background-color: var(--color-info);
+  color: var(--color-lightest);
+  -webkit-filter: none;
+          filter: none;
 }
 
 /* Navbar Title */
 .navbar .title {
-	color: var(--color-light);
-	font-weight: normal;
-	font-weight: normal;
-	font-size: 1em;
-	letter-spacing: 0.15em;
-	margin-bottom: 0;
-	padding: 0 1em;
+  color: var(--color-light);
+  font-weight: normal;
+  font-weight: normal;
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
+  padding: 0 1em;
 }
 
-
-
+/* ************************** */
 /* Page Footer */
-
+/* ************************ */
 .page-footer {
-	background-color: var(--color-foreground);
-	color: var(--color-background);
-	display: flex;
-	justify-content: center
+  background-color: var(--color-foreground);
+  color: var(--color-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.page-footer h1, 
-.page-footer h2, 
-.page-footer h3, 
-.page-footer h4, 
-.page-footer h5, 
+.page-footer h1,
+.page-footer h2,
+.page-footer h3,
+.page-footer h4,
+.page-footer h5,
 .page-footer h6 {
-	color: var(--color-light);
+  color: var(--color-light);
 }
 
 .page-footer > ul {
-	margin: 0;
-	padding: 0;
-	padding: 2em;
-	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 2em;
+  list-style-type: none;
 }
 
 .page-footer a {
-	color: var(--color-info);
-	filter: none;
+  color: var(--color-info);
+  -webkit-filter: none;
+          filter: none;
 }
 
 .page-footer a:link {
-	color: var(--color-background);
-	filter: none;
-}
-
-.page-footer a:visited {
-	
+  color: var(--color-background);
+  -webkit-filter: none;
+          filter: none;
 }
 
 .page-footer a:hover {
-	color: var(--color-light);
-	filter: none;
+  color: var(--color-light);
+  -webkit-filter: none;
+          filter: none;
 }
 
-.page-footer a:active {
-	
+/* *************************** */
+/* card styles */
+/* *************************** */
+.frmwrk-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid var(--color-foreground);
+  margin-top: 1rem;
+  background-color: var(--color-gray-lighter-3);
+  position: relative;
+  margin: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-
-/* ********* Code ************ */
-
-.code-block {
-	background-color: var(--color-gray-lighter-3);
-	padding: 0 1em 0 1em;
+.frmwrk-card > * {
+  padding: 1rem;
+  margin: 0;
 }
 
-code {
-	color: var(--color-danger-lighter-1);
-	tab-size: 2em;
+.frmwrk-card > img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0;
 }
 
+.frmwrk-card > *:last-child,
+.frmwrk-card > footer > *:last-child {
+  margin-bottom: 0;
+}
+
+.frmwrk-card > footer {
+  background-color: var(--color-background);
+}
+
+/* ************************ */
+/* Body Styles */
+/* ************************ */
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-stack);
+  font-size: var(--font-size);
+  line-height: var(--font-line-height);
+  margin: 0;
+  position: relative;
+}
+/*# sourceMappingURL=frmwrk.css.map */

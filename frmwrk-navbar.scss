@@ -1,0 +1,75 @@
+/* ************************ */
+
+/* Nav bar styles */
+
+/* ************************ */
+
+/* Navbar */
+
+.navbar {
+	background-color: var(--color-foreground);
+	color: var(--color-background);
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.navbar.sticky {
+	top: 0;
+	position: -webkit-sticky;
+  position: sticky;
+	position: relative;
+}
+
+/* Nav ul styles */
+
+.navbar > ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+/* Navbar links */
+
+.navbar a {
+	display: block;
+	padding: 0.25em 1em;
+	color: var(--color-info);
+}
+
+.navbar a:link {
+	
+}
+
+.navbar a:visited {
+	
+}
+
+.navbar a:hover {
+	background-color: var(--color-light);
+	color: var(--color-dark);
+	filter: none;
+}
+
+.navbar a:active {
+	background-color: var(--color-info);
+	color: var(--color-lightest);
+	filter: none;
+}
+
+/* Navbar Title */
+
+.navbar .title {
+	color: var(--color-light);
+	font-weight: normal;
+	font-weight: normal;
+	font-size: 1em;
+	letter-spacing: 0.15em;
+	margin-bottom: 0;
+	padding: 0 1em;
+}

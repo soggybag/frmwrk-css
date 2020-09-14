@@ -11,3 +11,15 @@
 	--vertical-space: 2rem;
 }
 			
+
+// $theme-text-color: red;
+
+// .test {
+// 	@for $i from 0 through 6 {
+//     --theme-text-color-#{$i}: #{lighten($theme-text-color, 10% * $i)};
+// 	}
+// 	// I’m getting the following error:
+// 	// Error: expected "{".
+// 	// 	╷
+// 	// 11 │     --theme-text-color-#{$i}: #{lighten($theme-text-color, 10% * $i)};
+// }

@@ -1,0 +1,48 @@
+/* ************************** */
+/* Page Footer */
+/* ************************ */
+.page-footer {
+  background-color: var(--color-foreground);
+  color: var(--color-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-footer h1,
+.page-footer h2,
+.page-footer h3,
+.page-footer h4,
+.page-footer h5,
+.page-footer h6 {
+  color: var(--color-light);
+}
+
+.page-footer > ul {
+  margin: 0;
+  padding: 0;
+  padding: 2em;
+  list-style-type: none;
+}
+
+.page-footer a {
+  color: var(--color-info);
+  -webkit-filter: none;
+          filter: none;
+}
+
+.page-footer a:link {
+  color: var(--color-background);
+  -webkit-filter: none;
+          filter: none;
+}
+
+.page-footer a:hover {
+  color: var(--color-light);
+  -webkit-filter: none;
+          filter: none;
+}
+/*# sourceMappingURL=frmwrk-footer.css.map */

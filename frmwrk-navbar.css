@@ -1,0 +1,81 @@
+/* ************************ */
+/* Nav bar styles */
+/* ************************ */
+/* Navbar */
+.navbar {
+  background-color: var(--color-foreground);
+  color: var(--color-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.navbar.sticky {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  position: relative;
+}
+
+/* Nav ul styles */
+.navbar > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+/* Navbar links */
+.navbar a {
+  display: block;
+  padding: 0.25em 1em;
+  color: var(--color-info);
+}
+
+.navbar a:hover {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  -webkit-filter: none;
+          filter: none;
+}
+
+.navbar a:active {
+  background-color: var(--color-info);
+  color: var(--color-lightest);
+  -webkit-filter: none;
+          filter: none;
+}
+
+/* Navbar Title */
+.navbar .title {
+  color: var(--color-light);
+  font-weight: normal;
+  font-weight: normal;
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
+  padding: 0 1em;
+}
+/*# sourceMappingURL=frmwrk-navbar.css.map */

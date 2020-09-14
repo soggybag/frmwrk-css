@@ -1,0 +1,93 @@
+/* Text and Headings */
+p, .info, h1, h2, h3, h4, h5, h6, .navbar, pre {
+  margin: 0 0 var(--vertical-space) 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-md-dark);
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+strong {
+  color: var(--color-md-dark);
+}
+
+em {
+  color: var(--color-dark);
+}
+
+.info {
+  background-color: var(--color-info);
+  color: var(--color-background);
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.info p {
+  margin: 0;
+}
+
+/* Anchor Styles */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+a:visited {
+  /* vendor prefixes! */
+  color: var(--color-primary-darker-2);
+}
+
+a:hover {
+  /* vendor prefixes! */
+  color: var(--color-primary-lighter-2);
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+/* ********* Code ************ */
+.code-block {
+  background-color: var(--color-gray-lighter-3);
+  padding: 0 1em 0 1em;
+}
+
+code {
+  color: var(--color-danger-lighter-1);
+  -moz-tab-size: 2em;
+    -o-tab-size: 2em;
+       tab-size: 2em;
+}
+/*# sourceMappingURL=frmwrk-typography.css.map */
