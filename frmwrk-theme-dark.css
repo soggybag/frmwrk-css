@@ -99,8 +99,8 @@
   --color-alternate-darker-3: #561989;
   --color-alternate-darker-4: #3b115e;
   /* **** base Color names **** */
-  --color-background: var(--color-gray-lighter-4);
-  --color-foreground: var(--color-gray-darker-4);
+  --color-background: var(--color-gray-darker-4);
+  --color-foreground: var(--color-gray-darker-1);
   --color-dark: var(--color-gray-darker-2);
   --color-light: var(--color-gray-lighter-2);
   --color-md-light: var(--color-gray);
@@ -117,5 +117,8 @@
   --font-stack-code: Courier;
   /* Layout */
   --vertical-space: 2rem;
+  --color-danger: var(--color-danger-darker-2);
+  --color-info: var(--color-info-lighter-1);
+  /* --color-foreground: var(--color-secondary-lighter-4); */
 }
 /*# sourceMappingURL=frmwrk-theme-dark.css.map */

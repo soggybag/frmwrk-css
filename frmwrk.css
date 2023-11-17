@@ -1,3 +1,5 @@
+/* @import url(frmwrk-theme-dark.css); */
+
 /* Text and Headings */
 p, .info, h1, h2, h3, h4, h5, h6, .navbar, pre {
   margin: 0 0 var(--vertical-space) 0;
@@ -80,12 +82,13 @@ pre {
 
 /* ********* Code ************ */
 .code-block {
-  background-color: var(--color-gray-lighter-3);
+  background-color: var(--color-gray-lighter-4);
   padding: 0 1em 0 1em;
+  /* font-weight: bold; */
 }
 
 code {
-  color: var(--color-danger-lighter-1);
+  color: var(--color-primary-darker-2);
   -moz-tab-size: 2em;
     -o-tab-size: 2em;
        tab-size: 2em;
