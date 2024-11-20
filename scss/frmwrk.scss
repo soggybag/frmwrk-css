@@ -1,15 +1,14 @@
 
-@import './frmwrk-typography.scss';
-@import './frmwrk-forms.scss';
-@import './frmwrk-code.scss';
-@import './frmwrk-navbar.scss';
-@import './frmwrk-footer.scss';
-@import './frmwrk-card.scss';
+
+@use "./frmwrk-typography.scss";
+@use "./frmwrk-forms.scss";
+@use "./frmwrk-code.scss";
+@use "./frmwrk-navbar.scss";
+@use "./frmwrk-footer.scss";
+@use "./frmwrk-card.scss";
 
 /* ************************ */
-
-/* Body Styles */
-
+/*       Body Styles        */
 /* ************************ */
 
 body {

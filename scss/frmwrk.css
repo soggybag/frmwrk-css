@@ -1,3 +1,93 @@
+/* Text and Headings */
+p, .info, h1, h2, h3, h4, h5, h6, .navbar, pre {
+  margin: 0 0 var(--vertical-space) 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-md-dark);
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+strong {
+  color: var(--color-md-dark);
+}
+
+em {
+  color: var(--color-dark);
+}
+
+.info {
+  background-color: var(--color-info);
+  color: var(--color-background);
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.info p {
+  margin: 0;
+}
+
+/* Anchor Styles */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: 200ms;
+}
+
+a:visited {
+  /* vendor prefixes! */
+  color: var(--color-primary-darker-2);
+}
+
+a:hover {
+  /* vendor prefixes! */
+  color: var(--color-primary-lighter-2);
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+/* ********* Code ************ */
+.code-block {
+  background-color: var(--color-gray-lighter-3);
+  padding: 0 1em 0 1em;
+}
+
+code {
+  color: var(--color-danger-lighter-2);
+  tab-size: 2em;
+}
+
 /* Form Elements and Controls */
 label > span {
   display: block;
@@ -8,13 +98,8 @@ input, label {
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 button {
@@ -22,8 +107,7 @@ button {
   /* Remove the default styles */
   border: none;
   font: inherit;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: transparent;
   /* Give the button a finger cursor */
   cursor: pointer;
@@ -32,11 +116,9 @@ button {
   border-style: solid;
   border-color: transparent;
   border-radius: 0.5em;
-  padding: 0.7em 1em;
-  /* Use padding to give the text some space */
+  padding: 0.7em 1em; /* Use padding to give the text some space */
   font-size: 1em;
   /* Think about adding a transition */
-  -webkit-transition: 200ms;
   transition: 200ms;
   /* Use some variables to control the appearance */
   font-weight: var(--weight);
@@ -73,13 +155,12 @@ textarea {
   border-radius: 0.5em;
   font-size: 1em;
   /* Add a transition */
-  -webkit-transition: 200ms;
   transition: 200ms;
   /* 
-		This removes the accessibility outline 
-		which should never be removed
-		https://a11yproject.com/posts/never-remove-css-outlines/
-	*/
+  	This removes the accessibility outline 
+  	which should never be removed
+  	https://a11yproject.com/posts/never-remove-css-outlines/
+  */
   outline: none !important;
 }
 
@@ -112,7 +193,6 @@ visual state of the switch. */
   border: 2px solid var(--color-medium);
   background-color: var(--color-light);
   position: relative;
-  -webkit-transition: 200ms;
   transition: 200ms;
   cursor: pointer;
   -webkit-user-select: none;
@@ -133,7 +213,6 @@ visual state of the switch. */
   margin: 2px;
   position: absolute;
   left: 0;
-  -webkit-transition: 200ms;
   transition: 200ms;
 }
 
@@ -214,6 +293,155 @@ position left to 40px. */
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/*# sourceMappingURL=frmwrk-forms.css.map */
+
+code {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* ************************ */
+/* Nav bar styles */
+/* ************************ */
+/* Navbar */
+.navbar {
+  background-color: var(--color-foreground);
+  color: var(--color-background);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.navbar.sticky {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  position: relative;
+}
+
+/* Nav ul styles */
+.navbar > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+/* Navbar links */
+.navbar a {
+  display: block;
+  padding: 0.25em 1em;
+  color: var(--color-info);
+}
+
+.navbar a:hover {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  filter: none;
+}
+
+.navbar a:active {
+  background-color: var(--color-info);
+  color: var(--color-lightest);
+  filter: none;
+}
+
+/* Navbar Title */
+.navbar .title {
+  color: var(--color-light);
+  font-weight: normal;
+  font-weight: normal;
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
+  padding: 0 1em;
+}
+
+/* ************************** */
+/* Page Footer */
+/* ************************ */
+.page-footer {
+  background-color: var(--color-foreground);
+  color: var(--color-background);
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer h1,
+.page-footer h2,
+.page-footer h3,
+.page-footer h4,
+.page-footer h5,
+.page-footer h6 {
+  color: var(--color-light);
+}
+
+.page-footer > ul {
+  margin: 0;
+  padding: 0;
+  padding: 2em;
+  list-style-type: none;
+}
+
+.page-footer a {
+  color: var(--color-info);
+  filter: none;
+}
+
+.page-footer a:link {
+  color: var(--color-background);
+  filter: none;
+}
+
+.page-footer a:hover {
+  color: var(--color-light);
+  filter: none;
+}
+
+/* *************************** */
+/*         card styles         */
+/* *************************** */
+.frmwrk-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  background-image: linear-gradient(blue, red);
+  position: relative;
+  margin: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.frmwrk-card > * {
+  padding: 1rem;
+  margin: 0;
+}
+.frmwrk-card > img {
+  align-self: flex-start;
+  padding: 0;
+}
+.frmwrk-card > *:last-child, .frmwrk-card > footer > *:last-child {
+  margin-bottom: 0;
+}
+.frmwrk-card > footer {
+  background-color: var(--color-background);
+}
+
+/* ************************ */
+/*       Body Styles        */
+/* ************************ */
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-stack);
+  font-size: var(--font-size);
+  line-height: var(--font-line-height);
+  margin: 0;
+  position: relative;
+}
+
+/*# sourceMappingURL=frmwrk.css.map */

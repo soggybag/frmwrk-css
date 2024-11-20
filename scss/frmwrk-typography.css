@@ -60,7 +60,6 @@ em {
 a {
   color: var(--color-primary);
   text-decoration: none;
-  -webkit-transition: 200ms;
   transition: 200ms;
 }
 
@@ -85,9 +84,8 @@ pre {
 }
 
 code {
-  color: var(--color-danger-lighter-1);
-  -moz-tab-size: 2em;
-    -o-tab-size: 2em;
-       tab-size: 2em;
+  color: var(--color-danger-lighter-2);
+  tab-size: 2em;
 }
+
 /*# sourceMappingURL=frmwrk-typography.css.map */

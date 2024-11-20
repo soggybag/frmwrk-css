@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,iCAAiC;CAC/C",
-    "sources": [
-        "frmwrk-code.scss"
-    ],
-    "names": [],
-    "file": "frmwrk-code.css"
-}

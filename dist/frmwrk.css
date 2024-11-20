@@ -1,5 +1,3 @@
-/* @import url(frmwrk-theme-dark.css); */
-
 /* Text and Headings */
 p, .info, h1, h2, h3, h4, h5, h6, .navbar, pre {
   margin: 0 0 var(--vertical-space) 0;
@@ -62,7 +60,6 @@ em {
 a {
   color: var(--color-primary);
   text-decoration: none;
-  -webkit-transition: 200ms;
   transition: 200ms;
 }
 
@@ -82,16 +79,13 @@ pre {
 
 /* ********* Code ************ */
 .code-block {
-  background-color: var(--color-gray-lighter-4);
+  background-color: var(--color-gray-lighter-3);
   padding: 0 1em 0 1em;
-  /* font-weight: bold; */
 }
 
 code {
-  color: var(--color-primary-darker-2);
-  -moz-tab-size: 2em;
-    -o-tab-size: 2em;
-       tab-size: 2em;
+  color: var(--color-danger-lighter-2);
+  tab-size: 2em;
 }
 
 /* Form Elements and Controls */
@@ -104,13 +98,8 @@ input, label {
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 button {
@@ -118,8 +107,7 @@ button {
   /* Remove the default styles */
   border: none;
   font: inherit;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: transparent;
   /* Give the button a finger cursor */
   cursor: pointer;
@@ -128,11 +116,9 @@ button {
   border-style: solid;
   border-color: transparent;
   border-radius: 0.5em;
-  padding: 0.7em 1em;
-  /* Use padding to give the text some space */
+  padding: 0.7em 1em; /* Use padding to give the text some space */
   font-size: 1em;
   /* Think about adding a transition */
-  -webkit-transition: 200ms;
   transition: 200ms;
   /* Use some variables to control the appearance */
   font-weight: var(--weight);
@@ -169,13 +155,12 @@ textarea {
   border-radius: 0.5em;
   font-size: 1em;
   /* Add a transition */
-  -webkit-transition: 200ms;
   transition: 200ms;
   /* 
-		This removes the accessibility outline 
-		which should never be removed
-		https://a11yproject.com/posts/never-remove-css-outlines/
-	*/
+  	This removes the accessibility outline 
+  	which should never be removed
+  	https://a11yproject.com/posts/never-remove-css-outlines/
+  */
   outline: none !important;
 }
 
@@ -208,7 +193,6 @@ visual state of the switch. */
   border: 2px solid var(--color-medium);
   background-color: var(--color-light);
   position: relative;
-  -webkit-transition: 200ms;
   transition: 200ms;
   cursor: pointer;
   -webkit-user-select: none;
@@ -229,7 +213,6 @@ visual state of the switch. */
   margin: 2px;
   position: absolute;
   left: 0;
-  -webkit-transition: 200ms;
   transition: 200ms;
 }
 
@@ -310,11 +293,12 @@ position left to 40px. */
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 code {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* ************************ */
@@ -324,19 +308,10 @@ code {
 .navbar {
   background-color: var(--color-foreground);
   color: var(--color-background);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 .navbar.sticky {
@@ -351,19 +326,10 @@ code {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
 /* Navbar links */
@@ -376,15 +342,13 @@ code {
 .navbar a:hover {
   background-color: var(--color-light);
   color: var(--color-dark);
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .navbar a:active {
   background-color: var(--color-info);
   color: var(--color-lightest);
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 /* Navbar Title */
@@ -404,12 +368,8 @@ code {
 .page-footer {
   background-color: var(--color-foreground);
   color: var(--color-background);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .page-footer h1,
@@ -430,64 +390,49 @@ code {
 
 .page-footer a {
   color: var(--color-info);
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .page-footer a:link {
   color: var(--color-background);
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .page-footer a:hover {
   color: var(--color-light);
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 /* *************************** */
-/* card styles */
+/*         card styles         */
 /* *************************** */
 .frmwrk-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px solid var(--color-foreground);
+  flex-direction: column;
   margin-top: 1rem;
-  background-color: var(--color-gray-lighter-3);
+  background-image: linear-gradient(blue, red);
   position: relative;
   margin: 1rem;
   border-radius: 5px;
   overflow: hidden;
 }
-
 .frmwrk-card > * {
   padding: 1rem;
   margin: 0;
 }
-
 .frmwrk-card > img {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   padding: 0;
 }
-
-.frmwrk-card > *:last-child,
-.frmwrk-card > footer > *:last-child {
+.frmwrk-card > *:last-child, .frmwrk-card > footer > *:last-child {
   margin-bottom: 0;
 }
-
 .frmwrk-card > footer {
   background-color: var(--color-background);
 }
 
 /* ************************ */
-/* Body Styles */
+/*       Body Styles        */
 /* ************************ */
 body {
   background-color: var(--color-background);
@@ -498,4 +443,5 @@ body {
   margin: 0;
   position: relative;
 }
+
 /*# sourceMappingURL=frmwrk.css.map */

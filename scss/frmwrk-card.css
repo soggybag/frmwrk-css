@@ -1,0 +1,29 @@
+/* *************************** */
+/*         card styles         */
+/* *************************** */
+.frmwrk-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  background-image: linear-gradient(var(--color-gray-lighter-2), var(--color-gray-lighter-3));
+  position: relative;
+  margin: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.frmwrk-card > * {
+  padding: 1rem;
+  margin: 0;
+}
+.frmwrk-card > img {
+  align-self: flex-start;
+  padding: 0;
+}
+.frmwrk-card > *:last-child, .frmwrk-card > footer > *:last-child {
+  margin-bottom: 0;
+}
+.frmwrk-card > footer {
+  background-color: var(--color-background);
+}
+
+/*# sourceMappingURL=frmwrk-card.css.map */
