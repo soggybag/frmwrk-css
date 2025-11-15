@@ -1,0 +1,28 @@
+/* =========================================
+   Design Tokens (Default Theme)
+   ========================================= */
+
+:root {
+  /* Colors */
+  --color-background: oklch(98% 0 0);
+  --color-foreground: oklch(20% 0.05 250);
+  --color-primary: oklch(65% 0.13 270);
+  --color-primary-darker-2: color-mix(in oklch, var(--color-primary) 70%, black);
+  --color-primary-lighter-2: color-mix(in oklch, var(--color-primary) 70%, white);
+
+  --color-info: oklch(75% 0.08 240);
+  --color-danger-lighter-2: oklch(70% 0.15 30);
+
+  /* Grays */
+  --color-gray-lighter-3: oklch(95% 0 0);
+  --color-light: oklch(92% 0 0);
+  --color-dark: oklch(30% 0 0);
+
+  /* Typography */
+  --font-stack: system-ui, sans-serif;
+  --font-size: 1rem;
+  --font-line-height: 1.6;
+
+  /* Layout */
+  --vertical-space: 1rem;
+}

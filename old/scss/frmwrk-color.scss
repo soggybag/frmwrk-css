@@ -12,7 +12,6 @@ $colors: (
 );
 
 :root {
-	
 	@each $key, $value in $colors {
 		/* Tints */
 		@for $i from 4 through 1 {
