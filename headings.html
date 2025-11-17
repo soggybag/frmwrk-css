@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Headings</title>
   <style>
-
 
     /* 
     
@@ -23,11 +22,12 @@
     body {
       font-family: var(--font-family);
       font-size: var(--font-base-size);
-      line-height: 1.35;
+      line-height: 1.5;
     }
 
     /* Make the font size for headings a ratio */
     h1 {
+      /* 121.5 */
       font-size: calc(var(--font-base-size) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio));
       /* Adjust the vertical margins */
       margin: 1rem 0;
@@ -36,25 +36,31 @@
     }
 
     h2 {
+      /* 81px */
       font-size: calc(var(--font-base-size) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio));
       margin: 1rem 0;
     }
 
     h3 {
+      /* 54px */
       font-size: calc(var(--font-base-size) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio));
       margin: 1rem 0;
     }
 
     h4 {
+      /* 36px */
       font-size: calc(var(--font-base-size) * var(--font-ratio) * var(--font-ratio));
       margin: 1rem 0;
     }
 
+    /* Each of the larger headings is one ratio larger. This was my scheme, you can use this or come up with one of your own! */
     h5 {
+      /* 24px */
       font-size: calc(var(--font-base-size) * var(--font-ratio));
       margin: 1rem 0;
     }
 
+    /* h6 is the font size */
     h6 {
       font-size: 1rem;
       margin: 1rem 0;
@@ -68,6 +74,7 @@
 </head>
 <body>
   <main>
+    <p>Headings h1 to h6</p>
     <h1>Heading h1</h1>
     <h2>Heading h2</h2>
     <h3>Heading h3</h3>
@@ -75,6 +82,7 @@
     <h5>Heading h5</h5>
     <h6>Heading h6</h6>
 
+    <p>Headings h1-6 in a row for comparison.</p>
     <div class="row">
       <h1>H1</h1>
       <h2>H2</h2>
@@ -84,6 +92,7 @@
       <h6>H6</h6>
     </div>
 
+    <p>Headings followed by a paragraph for reference.</p>
     <h1>Heading h1</h1>
     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
     <h2>Heading h2</h2>

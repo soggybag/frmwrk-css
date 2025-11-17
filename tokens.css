@@ -2,37 +2,40 @@
    Design Tokens – Default Theme
    ========================================= */
 
-:root {
-  /* Core palette */
-  --color-background: #fdfdfd;
-  --color-foreground: #222222;
+@layer tokens {
+  :root {
+    /* Core palette */
+    --color-background: #fdfdfd;
+    --color-foreground: #222222;
 
-  --color-lightest: #ffffff;
-  --color-light: #f2f2f2;
-  --color-dark: #333333;
+    --color-lightest: #ffffff;
+    --color-light: #f2f2f2;
+    --color-dark: #333333;
 
-  --color-primary: #4f46e5;
-  --color-primary-darker-2: #3730a3;
-  --color-primary-lighter-2: #818cf8;
+    --color-primary: #4f46e5;
+    --color-primary-darker-2: #3730a3;
+    --color-primary-lighter-2: #818cf8;
 
-  --color-info: #0ea5e9;
-  --color-danger-lighter-2: #f97373;
+    --color-info: #0ea5e9;
+    --color-danger-lighter-2: #f97373;
 
-  --color-gray-lighter-3: #e5e7eb;
+    --color-gray-lighter-3: #e5e7eb;
 
-  --color-medium: #9ca3af;
-  --color-md-light: #d1d5db;
-  --color-md-dark: #111827;
+    --color-medium: #9ca3af;
+    --color-md-light: #d1d5db;
+    --color-md-dark: #111827;
 
-  /* Derived / semantic tokens */
-  --body-color: var(--color-background);
+    /* Derived / semantic tokens */
+    --body-color: var(--color-background);
 
-  /* Typography */
-  --font-stack: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-  --font-size: 1rem;
-  --font-line-height: 1.6;
+    /* Typography */
+    --font-stack: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+    --font-size: 1rem;
+    --font-line-height: 1.6;
 
-  /* Layout scale */
-  --vertical-space: 1rem;
+    /* Layout scale */
+    --vertical-space: 1rem;
+  }
+
 }
